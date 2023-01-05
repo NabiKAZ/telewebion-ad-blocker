@@ -5,6 +5,7 @@
 // @description  Telewebion.com Website Ad Blocker
 // @author       @NabiKAZ
 // @match        https://www.telewebion.com/*
+// @match        https://telewebion.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -16,7 +17,7 @@
         var el = document.getElementsByClassName('vast-skip-button')[0];
         if (el) {
             el.style.display = 'block';
-            el.classList.add("enabled");
+            el.classList.add('enabled');
             el.click();
             clearInterval(interval);
         } else {
